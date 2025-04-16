@@ -253,7 +253,7 @@ class Game:
                             # Place tower
                             can_place, pos = self.can_place_tower(mouse_pos)
                             if can_place and self.money >= TOWER_COST:
-                                self.towers.append(BaseTower(pos[0], pos[1], self.selected_tower_type))
+                                self.towers.append(BaseTower(pos[0], pos[1]))
                                 self.money -= TOWER_COST
             
             elif self.state == GAME_OVER:
